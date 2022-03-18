@@ -1,22 +1,27 @@
 :root {
     --main-text-color: #212121;
+    --secondary-text-color: #FFFFFF;
+    --main-background-color: #FFFFFF;
+    --secondary-background-color: #2F303A;
     --hover-color: #2196F3;
     --contacts-color: #757575;
-    --secondary-text-color: #FFFFFF;
 }
 
 body {
     font-family: Roboto, Arial, Verdana sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.03em;
     color: var(--main-text-color);
+    background-color: var(--main-background-color)
 }
 
 .logo {
-    font-family: 'Raleway', sans-serif;
     font-size: 26px;
-    text-decoration: none;
-    color: var(--main-text-color);
     font-weight: 700;
     line-height: 1.2;
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+    color: var(--main-text-color);
 }
 
 .logo.secondary{
@@ -24,9 +29,9 @@ body {
 }
 
 .site-nav .link {
+    font-weight: 500;
     text-decoration: none;
     color: var(--main-text-color);
-    font-weight: 500;
 }
 
 .site-nav .link:hover,
@@ -39,8 +44,8 @@ body {
 }
 
 .site-nav {
-    font-size: 14px;
-    line-height: 1.1;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
 }
 
 .site-current {
@@ -48,9 +53,9 @@ body {
 }
 
 .contact {
-    color: var(--contacts-color);
-    text-decoration: none;
     font-weight: 500;
+    text-decoration: none;
+    color: var(--contacts-color);
 }
 
 .contact:hover,
@@ -59,8 +64,8 @@ body {
 }
 
 .contacts {
-    font-size: 14px;
     line-height: 1.1;
+    letter-spacing: 0.02em;
     font-style: normal;
 }
 
@@ -70,40 +75,39 @@ body {
 
 .site-hero h1 {
     font-size: 44px;
-    color: var(--secondary-text-color);
     font-weight: 900;
     line-height: 1.4;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--secondary-text-color);
 }
 
 .site-hero button {
     font-size: 16px;
-    line-height: 1.9;
-    font-family: 'Roboto', sans-serif;
-    color: var(--secondary-text-color);
     font-weight: 700;
+    line-height: 1.9;
+    letter-spacing: 0.06em;
+    font-family: 'Roboto', sans-serif;
     cursor: pointer;
+    color: var(--secondary-text-color);
     background-color: var(--hover-color);
-}
-
-.company-benefits h3,
-.company-benefits p {
-    font-size: 14px;
 }
 
 .company-benefits h3 {
     font-weight: 700;
     line-height: 1.1;
+    text-transform: uppercase;
 }
 
 .company-benefits p {
-    color: var(--contacts-color);
     line-height: 1.7;
+    color: var(--contacts-color);
 }
 
 .company-work h2 {
     font-size: 36px;
-    line-height: 1.2;
     font-weight: 700;
+    line-height: 1.2;
 }
 
 .company-team p,
@@ -122,8 +126,8 @@ body {
 
 .company-team h2 {
     font-size: 36px;
-    line-height: 1.2;
     font-weight: 700;
+    line-height: 1.2;
 }
 
 .contact.address {
@@ -142,18 +146,25 @@ body {
 }
 
 .filter button {
-    background-color: #F5F4FA;
     font-size: 16px;
     font-weight: 500;
     line-height: 1.6;
+    letter-spacing: 0.03em;
     font-family: 'Roboto', sans-serif;
     cursor: pointer;
+    background-color: var(--main-background-color);
 }
 
-.portfolio h3 {
+.portfolio a {
+    text-decoration: none;
+}
+
+.portfolio h2 {
     font-size: 18px;
-    line-height: 2;
     font-weight: 700;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--main-text-color);
 }
 
 .portfolio p {
